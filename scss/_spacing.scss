@@ -1,0 +1,39 @@
+$spacing-scale: (
+  0: 0px,
+  100: 8px,
+  200: 16px,
+  300: 24px,
+  400: 32px,
+  500: 40px,
+  600: 48px,
+  800: 64px,
+  1000: 80px
+);
+
+@mixin space($property, $token, $direction: null) {
+  $value: map-get($spacing-scale, $token);
+
+  @if $value == null {
+    @warn "⚠️ Spacing token `#{$token}` not found in $spacing-scale.";
+  } @else {
+    @if $direction == null {
+      #{$property}: $value;
+    } @else if $direction == x {
+      #{$property}-left: $value;
+      #{$property}-right: $value;
+    } @else if $direction == y {
+      #{$property}-top: $value;
+      #{$property}-bottom: $value;
+    } @else if $direction == t {
+      #{$property}-top: $value;
+    } @else if $direction == r {
+      #{$property}-right: $value;
+    } @else if $direction == b {
+      #{$property}-bottom: $value;
+    } @else if $direction == l {
+      #{$property}-left: $value;
+    } @else {
+      @warn "⚠️ Direction `#{$direction}` not supported. Use t, r, b, l, x, y.";
+    }
+  }
+}

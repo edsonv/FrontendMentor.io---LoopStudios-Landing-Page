@@ -1,0 +1,27 @@
+{
+  "name": "loopstudios-landing-page",
+  "version": "1.0.0",
+  "description": "FrontendMentor.io Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "sass --watch scss/styles.scss css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edsonv/FrontendMentor.io---LoopStudios-Landing-Page.git"
+  },
+  "keywords": [
+    "frontendmentor.io",
+    "landing-page"
+  ],
+  "author": "Edson J. Vargas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edsonv/FrontendMentor.io---LoopStudios-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/edsonv/FrontendMentor.io---LoopStudios-Landing-Page#readme",
+  "devDependencies": {
+    "sass": "^1.90.0"
+  }
+}
