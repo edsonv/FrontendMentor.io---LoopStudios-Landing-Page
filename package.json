@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-sass": "sass --watch scss/styles.scss css/styles.css"
+    "sass:watch": "sass --watch scss/styles.scss css/styles.css",
+    "serve": "browser-sync start --server --files 'index.html, css/*.css'",
+    "dev": "concurrently -k -n SASS,BS \"npm run sass:watch\" \"npm run serve\""
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,8 @@
   },
   "homepage": "https://github.com/edsonv/FrontendMentor.io---LoopStudios-Landing-Page#readme",
   "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.0",
     "sass": "^1.90.0"
   }
 }
