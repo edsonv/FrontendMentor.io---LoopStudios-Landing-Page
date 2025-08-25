@@ -9,7 +9,7 @@
     "serve": "browser-sync start --server --files 'index.html, css/*.css'",
     "dev": "concurrently -k -n SASS,BS \"npm run sass:watch\" \"npm run serve\"",
     "build": "sass scss/styles.scss css/styles.css --style compressed",
-    "deploy": "build && gh-pages -d ."
+    "deploy": "npm run build && gh-pages -d ."
 
   },
   "repository": {

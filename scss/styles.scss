@@ -356,7 +356,7 @@ body {
 
   .creations {
     display: grid;
-    margin-top: 120px;
+    margin-top: 160px;
     grid-template-columns: repeat(4, 1fr);
     @include spacing.space(gap, 800);
 
