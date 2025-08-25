@@ -15,7 +15,7 @@ $spacing-scale: (
 @mixin space($property, $token, $direction: null) {
   $value: map.get($spacing-scale, $token);
 
-  @if $value == null {
+  @if not $value {
     @warn "⚠️ Spacing token `#{$token}` not found in $spacing-scale.";
   } @else {
     @if $direction == null {
