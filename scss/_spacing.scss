@@ -18,7 +18,7 @@ $spacing-scale: (
   @if not $value {
     @warn "⚠️ Spacing token `#{$token}` not found in $spacing-scale.";
   } @else {
-    @if $direction == null {
+    @if not $direction {
       #{$property}: $value;
     } @else if $direction == x {
       #{$property}-left: $value;
