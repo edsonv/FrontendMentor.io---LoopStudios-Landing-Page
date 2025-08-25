@@ -8,7 +8,7 @@
     "sass:watch": "sass --watch scss/styles.scss css/styles.css",
     "serve": "browser-sync start --server --files 'index.html, css/*.css'",
     "dev": "concurrently -k -n SASS,BS \"npm run sass:watch\" \"npm run serve\"",
-    "build": "",
+    "build": "sass scss/styles.scss css/styles.css --style compressed",
     "deploy": "gh-pages -d ."
   },
   "repository": {

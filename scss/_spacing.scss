@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $spacing-scale: (
   0: 0px,
   100: 8px,
@@ -7,11 +9,11 @@ $spacing-scale: (
   500: 40px,
   600: 48px,
   800: 64px,
-  1000: 80px
+  1000: 80px,
 );
 
 @mixin space($property, $token, $direction: null) {
-  $value: map-get($spacing-scale, $token);
+  $value: map.get($spacing-scale, $token);
 
   @if $value == null {
     @warn "⚠️ Spacing token `#{$token}` not found in $spacing-scale.";

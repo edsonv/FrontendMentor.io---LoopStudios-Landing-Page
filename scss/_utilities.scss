@@ -1,4 +1,4 @@
-// styles/_text-preset-utilities-props.scss
+@use "sass:map";
 
 $breakpoints: (
   mobile: 0,
@@ -53,12 +53,12 @@ $text-presets: (
 );
 
 @mixin text-rules($cfg) {
-  font-family: map-get($cfg, ff);
-  font-size: map-get($cfg, fs);
-  line-height: map-get($cfg, lh);
-  font-weight: map-get($cfg, fw);
-  @if map-has-key($cfg, ls) {
-    letter-spacing: map-get($cfg, ls);
+  font-family: map.get($cfg, ff);
+  font-size: map.get($cfg, fs);
+  line-height: map.get($cfg, lh);
+  font-weight: map.get($cfg, fw);
+  @if map.has-key($cfg, ls) {
+    letter-spacing: map.get($cfg, ls);
   }
 }
 
