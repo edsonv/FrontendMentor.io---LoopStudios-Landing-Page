@@ -34,8 +34,7 @@ body {
 }
 
 .header {
-  background: url("../images/mobile/image-hero.jpg") no-repeat center/contain
-    variables.$gray;
+  background: url("../images/mobile/image-hero.jpg") no-repeat center/contain;
   height: 650px;
   display: flex;
   flex-direction: column;
@@ -229,8 +228,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .header {
-    background: url("../images/desktop/image-hero.jpg") no-repeat center/cover
-      variables.$gray;
+    background: url("../images/desktop/image-hero.jpg") no-repeat center/cover;
     @include spacing.space(padding, 600, y);
     @include spacing.space(padding, 1000, x);
 
@@ -325,7 +323,7 @@ body {
       width: 9.25em;
       margin-top: 10%;
       @include spacing.space(padding, 500, x);
-      @include spacing.space(padding, 500, y);
+      @include spacing.space(padding, 400, y);
     }
   }
 
