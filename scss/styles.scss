@@ -252,9 +252,9 @@ body {
     }
 
     > .hero-content {
-      width: 610px;
+      width: 640px;
       margin-top: -80px;
-      @include spacing.space(gap, 300);
+      @include spacing.space(gap, 400);
       @include spacing.space(padding, 800, y);
       @include spacing.space(padding, 0, x);
     }
@@ -339,8 +339,8 @@ body {
     > .hero-content {
       position: absolute;
       top: 260px;
-      right: -60px;
-      padding: 100px 85px;
+      right: -95px;
+      padding: 100px;
 
       > .title {
         text-align: left;
