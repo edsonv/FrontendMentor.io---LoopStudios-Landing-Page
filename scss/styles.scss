@@ -389,6 +389,7 @@ body {
     }
   }
   .footer {
+    margin-top: 8px;
     @include spacing.space(gap, 200);
     padding: 40px 160px;
     display: grid;
