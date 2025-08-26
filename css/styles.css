@@ -552,6 +552,11 @@ body {
   .creations .content > .item > .link figure {
     height: 100%;
   }
+  .creations .content > .item > .link figure > figcaption {
+    max-width: 24%;
+    bottom: 32px;
+    left: 32px;
+  }
   .creations .see-all {
     order: 2;
     width: fit-content;

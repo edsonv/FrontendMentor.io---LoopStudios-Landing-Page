@@ -377,6 +377,11 @@ body {
         figure {
           height: 100%;
         }
+        figure > figcaption {
+          max-width: 24%;
+          bottom: 32px;
+          left: 32px;
+        }
       }
     }
 
