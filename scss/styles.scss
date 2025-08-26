@@ -49,12 +49,16 @@ body {
       z-index: 1;
     }
     > .h-menu {
+      background: none;
+      border: none;
       cursor: pointer;
     }
     > .close-menu {
       z-index: 1;
       cursor: pointer;
       display: none;
+      background: none;
+      border: none;
     }
   }
   > .nav > .nav-list {
