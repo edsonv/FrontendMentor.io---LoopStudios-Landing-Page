@@ -182,8 +182,7 @@ body {
     text-decoration: none;
     border: 1px solid variables.$black;
     text-align: center;
-    @include spacing.space(padding, 200, y);
-    @include spacing.space(padding, 400, x);
+    padding: 10px 32px;
     margin: 0 auto;
     color: variables.$black;
   }
@@ -340,7 +339,7 @@ body {
       position: absolute;
       top: 260px;
       right: -60px;
-      padding: 85px;
+      padding: 90px 85px;
 
       > .title {
         text-align: left;
