@@ -357,8 +357,7 @@ body {
     display: grid;
     margin-top: 148px;
     grid-template-columns: repeat(4, 1fr);
-    gap: 70px;
-
+    @include spacing.space(gap, 1000);
     .title {
       width: fit-content;
       order: 1;
