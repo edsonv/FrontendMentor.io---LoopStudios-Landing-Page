@@ -567,6 +567,7 @@ body {
     justify-self: end;
   }
   .footer {
+    magin-top: 16px;
     gap: 16px;
     padding: 32px 160px;
     display: grid;
