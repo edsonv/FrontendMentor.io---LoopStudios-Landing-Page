@@ -395,7 +395,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     > .nav > .nav-list {
-      @include spacing.space(gap, 100);
+      @include spacing.space(gap, 400);
     }
     > .social {
       justify-self: end;
