@@ -390,7 +390,7 @@ body {
   }
   .footer {
     @include spacing.space(gap, 200);
-    padding: 40px 160px;
+    padding: 32px 160px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
