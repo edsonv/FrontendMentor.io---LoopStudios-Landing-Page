@@ -396,6 +396,7 @@ body {
     }
   }
   .footer {
+    @include spacing.space(magin, 200, t);
     @include spacing.space(gap, 200);
     padding: 32px 160px;
     display: grid;
