@@ -321,7 +321,7 @@ body {
     > .lead {
       align-self: flex-start;
       width: 9.25em;
-      margin-top: 11%;
+      margin-top: 11.5%;
       @include spacing.space(padding, 500, x);
       @include spacing.space(padding, 400, y);
     }
@@ -340,7 +340,7 @@ body {
       position: absolute;
       top: 260px;
       right: -60px;
-      padding: 100px;
+      padding: 85px;
 
       > .title {
         text-align: left;
@@ -354,9 +354,9 @@ body {
 
   .creations {
     display: grid;
-    margin-top: 160px;
+    margin-top: 150px;
     grid-template-columns: repeat(4, 1fr);
-    @include spacing.space(gap, 800);
+    gap: 70px;
 
     .title {
       width: fit-content;
