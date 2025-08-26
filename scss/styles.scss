@@ -321,7 +321,7 @@ body {
     > .lead {
       align-self: flex-start;
       width: 9.25em;
-      margin-top: 12%;
+      margin-top: 11%;
       @include spacing.space(padding, 500, x);
       @include spacing.space(padding, 400, y);
     }
@@ -338,9 +338,9 @@ body {
     }
     > .hero-content {
       position: absolute;
-      top: 270px;
-      right: -20px;
-      padding: 80px;
+      top: 260px;
+      right: -60px;
+      padding: 100px;
 
       > .title {
         text-align: left;
