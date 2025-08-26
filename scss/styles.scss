@@ -182,7 +182,8 @@ body {
     text-decoration: none;
     border: 1px solid variables.$black;
     text-align: center;
-    padding: 10px 32px;
+    @include spacing.space(padding, 200, y);
+    @include spacing.space(padding, 400, x);
     margin: 0 auto;
     color: variables.$black;
   }
